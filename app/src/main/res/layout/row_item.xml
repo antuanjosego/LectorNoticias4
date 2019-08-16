@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/ivLogo"
+        android:text="Título de la noticia" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTitulo"
+        android:paddingTop="30dp"
+        android:text="01/01/2015" />
+
+    <ImageView
+        android:id="@+id/ivCalendar"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/tvFecha"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/tvFecha"
+        android:src="@drawable/calendar" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="30dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="true"
+        android:src="@drawable/logo_efe" />
+
+</RelativeLayout>
